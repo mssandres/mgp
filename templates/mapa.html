@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+     integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI="
+     crossorigin=""/>
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/mapa.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static',filename='Leaflet-MiniMap-master/dist/Control.MiniMap.min.css')}}">
+    <title>Comunidades</title>
+    <h1>PLATAFORMA PNFA</h1>
+    <select name="select-location" id="select-location">
+        <option value="-1">Seleccione un lugar</option>
+        <option value="6.636254, -73.223129">Barichara-Santander</option>
+        <option value="12.19602,-72.147218">Cabo de la vela-La Guajira</option>
+    </select>
+</head>
+<body>
+    <div id="map"></div>
+    <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+        integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM="
+        crossorigin=""></script>
+    <script src="{{ url_for('static',filename='Leaflet-MiniMap-master/dist/Control.MiniMap.min.js')}}"></script>
+    <script src="{{ url_for('static',filename='SHAPES/aerod.js')}}"></script>
+    <script src="{{ url_for('static',filename='SHAPES/calleHCO.js')}}"></script>
+    <script src="{{ url_for('static',filename='SHAPES/casco_urbano.js')}}"></script>
+    <script src="{{ url_for('static',filename='SHAPES/comunidades.js')}}"></script>
+    <script src="{{ url_for('static',filename='SHAPES/portuario.js')}}"></script>
+    <script src="{{ url_for('static',filename='SHAPES/redvial.js')}}"></script>
+    <script src="{{ url_for('static',filename='js/mapa.js')}}"></script>
+        
+</body>
+</html>
